@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORMULIR PENDAFTARAN"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        />
+
+    <EditText
+        android:id="@+id/et_namalengkap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+        android:inputType="text"
+        android:layout_below="@+id/tv_judul"
+        />
+
+    <EditText
+        android:id="@+id/et_nomorpendaftaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Pendaftaran"
+        android:inputType="text"
+        android:layout_below="@+id/et_namalengkap"
+        />
+
+    <TextView
+        android:id="@+id/tv_jalurpendaftaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jalur Pendaftaran"
+        android:textSize="17sp"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/et_nomorpendaftaran"
+        />
+
+    <Spinner
+        android:id="@+id/sp_jalurpendaftaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_jalurpendaftaran"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_konfirmasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konfirmasi Pendaftaran"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/sp_jalurpendaftaran"
+        />
+
+
+</RelativeLayout>
+
