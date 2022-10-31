@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nomor Pendaftaran"
-        android:inputType="text"
+        android:inputType="number"
         android:layout_below="@+id/et_namalengkap"
         />
 
@@ -60,6 +60,15 @@
         android:onClick="onCheckboxClicked"
         android:layout_below="@+id/sp_jalurpendaftaran"
         />
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Daftar"
+        android:layout_below="@id/sp_jalurpendaftaran"
+        android:layout_marginBottom="30dp"/>
 
 
 </RelativeLayout>
